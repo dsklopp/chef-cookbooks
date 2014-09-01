@@ -26,6 +26,10 @@
 
 package 'xen' do 
    action :install
+   package_name "xen-hypervisor-amd64"
 end
 
-
+cookbook_file 'interfaces' do
+  path "/etc/network/interfaces"
+  action :create
+end

@@ -26,6 +26,7 @@
 
 package 'xen' do 
    action :install
+   pakacage_name "xen-hypervisor-amd64"
 end
 
 
